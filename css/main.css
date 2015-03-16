@@ -1,5 +1,17 @@
+h1, h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4em;
+  text-align: center;
+}
+
+li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+}
+
 .forecast {
-  background-color: lightgrey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5em;
   text-align: center;
   border: 1px solid black;
   margin: 1px;
