@@ -1,2 +1,2 @@
 # angular-weather-app
-Weather App using AngularJS
+Weather App built with AngularJS and Bootstrap.
