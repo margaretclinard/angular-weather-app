@@ -14,14 +14,14 @@
     <![endif]-->
 
     <div class="container">
-      <div ng-app="weather" ng-controller="GetWeather as weather">
+      <div ng-app="weather">
         <div class="col-md-12">
           <h1>Geolocation Weather App</h1>
-          <h2>Welcome, you must be in {{weather.location.city}}, {{weather.location.state}}!</h2>
-          <div>
-            <a class="btn btn-default" href="/#/current">Current Conditions</a>
-            <a class="btn btn-default" href="/#/10day">10 Day Forecast</a>
-          </div>
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="/#/home">Home</a></li>
+            <li role="presentation"><a href="/#/current">Current Conditions</a></li>
+            <li role="presentation"><a href="/#/10day">10 Day Forecast</a></li>
+          </ul>
           <div ng-view></div>
         </div>
     </div>

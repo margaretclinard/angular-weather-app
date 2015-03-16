@@ -12,4 +12,9 @@ angular
         controller: 'GetWeather',
         controllerAs: 'weather'
       })
+      .when('/', {
+        templateUrl: 'app/weather/home.html',
+        controller: 'GetWeather',
+        controllerAs: 'weather'
+      })
   })
