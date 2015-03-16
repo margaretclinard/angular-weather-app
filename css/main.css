@@ -1,7 +1,12 @@
-h1, h2 {
+h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 4em;
-  text-align: center;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
 }
 
 li {
@@ -14,8 +19,18 @@ li {
   font-size: 1.5em;
   text-align: center;
   border: 1px solid black;
-  margin: 1px;
+  margin: 10px;
   display: inline-block;
   height: 200px;
   width: 200px;
+}
+
+.main-image {
+  background-image: url('http://stylonica.com/wp-content/uploads/2014/03/spring-10.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  height: 450px;
 }
