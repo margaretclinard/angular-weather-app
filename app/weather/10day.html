@@ -1,0 +1,11 @@
+<div class="row">
+  <div ng-repeat="w in weather.forecast.simpleforecast.forecastday">
+    <div class="col-md-2 forecast">
+      <p>{{w.date.weekday_short}}, {{w.date.monthname}} {{w.date.day}}, {{w.date.year}}</p>
+      <img ng-src="{{w.icon_url}}">
+      <p><strong>{{w.conditions}}</strong></p>
+      <p>High: {{w.high.fahrenheit}}</p>
+      <p>Low: {{w.low.fahrenheit}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US" ng-app="weather">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Weather App</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <div class="container">
+      <div ng-app="weather" ng-controller="GetWeather as weather">
+        <div class="col-md-12">
+          <h1>Geolocation Weather App</h1>
+          <h2>Welcome, you must be in {{weather.location.city}}, {{weather.location.state}}!</h2>
+          <div>
+            <a class="btn btn-default" href="/#/current">Current Conditions</a>
+            <a class="btn btn-default" href="/#/10day">10 Day Forecast</a>
+          </div>
+          <div ng-view></div>
+        </div>
+    </div>
+
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/weather/weather.controller.js"></script>
+  </body>
+</html>
